@@ -17,8 +17,8 @@
         <nav>
             <ul>
                 <li><a href="#checklist">Checklist</a></li>
-                <li><a href="#steps">Steps</a></li>
-                <li><a href="#subscribe">Subscribe</a></li>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#plans">Plans</a></li>
             </ul>
         </nav>
     </header>
@@ -27,20 +27,57 @@
         <h3>Team Members</h3>
         <img
         src="people.jpg"
-        alt="people"
-        width="250"
+        alt="team members"
+        width="350"
         />
+        <audio controls src="mus.mp3"></audio>
+        <video width="320" controls src="mov.mp4"></video>
+        <section>
+            <h2 id="checklist"><span><Checklist/span></Checklist></h2>
+                <ol>
+                    <li><input type="checkbox" /> Introductions</li>
+                    <li><input type="checkbox" /> Icebreakers</li>
+                    <li><input type="checkbox" /> Reviewed lecture slides</li>
+                    <li><input type="checkbox" /> Brainstorming session</li>
+                    <li><input type="checkbox" /> Wrote out documentation</li>
+                    <li><input type="checkbox" /> Planned next meeting</li>
+                </ol>
+            </section>
+            <section>
+                <h2 id="details">Meeting Details</h2>
+                <p>
+                    Made introductions within group. Went over course logistics with TA. Discussed usage of social media platform
+                    and time to meet. 
+                    <br>
+                    Planned for next meeting and future GitHub repo. 
+                    <hr>
+                </p>
+                <ul>
+                    <li>8:00 pm: <strong>meeting started</strong></li>
+                    <li>8:05 pm: went over names/introductions with group</li>
+                    <li>8:20 pm: went through <i>course logistics</i> and <em>format</em> with TA</li>
+                    <li>8:40 pm: discussed what <a href ="https://slack.com/">platform</a> to use for communication</li>
+                    <li>8:50 pm: <b>meeting adjourned</b></li>
+                </ul>
+                
+            </section>
+            <section>
+                <details>
+                    <summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?</summary>
+                    A keyboard.
+                </details>
+            </section>
+        </main>
         
-        <h2 id="checklist">Checklist</h2>
-        <ol>
-            <li><input type="checkbox" /> Introductions</li>
-            <li><input type="checkbox" /> Reviewed lecture slides</li>
-            <li><input type="checkbox" /> 1 teaspoon salt</li>
-            <li><input type="checkbox" /> 1 tablespoon white sugar</li>
-            <li><input type="checkbox" /> 1 ¼ cups milk</li>
-            <li><input type="checkbox" /> 1 egg</li>
-        </ol>
-    </main>
-</body>
-
-</html>
+        <footer>
+            <h4 id="sendmessage">Send a Message</h6>
+                <form onsubmit="alert('Message has been Sent!')">
+                    <input type="text" placeholder="Enter Message" />
+                    <button>Submit</button>
+                </form>
+                <br />
+            </footer>
+        </body>
+        
+        </html>
+        
