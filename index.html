@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="#checklist">Checklist</a></li>
                 <li><a href="#details">Details</a></li>
-                <li><a href="#plans">Plans</a></li>
+                <li><a href="#meeting-date">Set Next Meeting</a></li>
             </ul>
         </nav>
     </header>
@@ -70,14 +70,70 @@
         </main>
         
         <footer>
-            <h4 id="sendmessage">Send a Message</h6>
+            <textarea id="thank" name="thank"
+            rows="5" cols="15">Thanks for reading
+        </textarea>
+        <br>
+        
+        <section>
+            <h4 id="sendmessage">Send Us a Message</h6>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required
+                minlength="4" maxlength="8" size="10" placeholder="Name">
+                
                 <form onsubmit="alert('Message has been Sent!')">
                     <input type="text" placeholder="Enter Message" />
                     <button>Submit</button>
                 </form>
-                <br />
-            </footer>
-        </body>
-        
-        </html>
-        
+            </section>
+            <br>
+            <section>
+                <label for="meeting-date">Choose date for next meeting:</label>
+                
+                <input type="date" id="meeting-date" name="meeting-date"
+                value="2022-10-13"
+                min="2022-10-06" max="2022-12-31">
+                <form>
+                    <fieldset>
+                        <legend>Choose your favorite class</legend>
+                        
+                        <input type="radio" id="cse110" name="class">
+                        <label for="cse110">CSE 110</label><br>
+                        
+                        <input type="radio" id="cse140" name="class">
+                        <label for="cse140">CSE 140</label><br>
+                        
+                        <input type="radio" id="cse101" name="class"/>
+                        <label for="cse101">CSE 101</label>
+                    </fieldset>
+                </form>
+            </section>
+            <br>
+            <section>
+                <label for="pet-select">Choose social media platform:</label>
+                
+                <select id="pet-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="slack">Slack</option>
+                    <option value="discord">Discord</option>
+                    <option value="messenger">Facebook Messenger</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="text">Text Messaging</option>
+                </select>
+            </section>
+            <section>
+                <label for="grade-choice">Choose a grade:</label>
+                <input list="grade-choices" id="grade-choice" name="grade-choice">
+                <datalist id="grade-choices">
+                    <option value="A">
+                        <option value="B">
+                            <option value="C">
+                                <option value="F">
+                                </datalist>
+                                <button>Submit</button>
+                            </section>
+                        </footer>
+                    </body>
+                    
+                    </html>
+                    
