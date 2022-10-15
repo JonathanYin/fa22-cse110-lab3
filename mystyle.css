@@ -2,12 +2,24 @@ body {
     background-color: aliceblue;
 }
 
+h1 {
+    color:rgba(255, 120, 255, 0.771);
+}
+
 h2 {
     text-align: center;
 }
 
 h3 {
     color:crimson;
+}
+
+h4 {
+    color:#d4ffea;
+}
+
+h5 {
+    color:hsl(168, 73%, 53%);
 }
 
 .ems li {
@@ -33,4 +45,28 @@ h3 {
     width: 10em;
     height: 2vh;
     font-size: 2ex;
+}
+
+.bg {
+    background: linear-gradient(
+    105deg,
+    rgba(255, 255, 255, 0.2) 39%,
+    rgba(51, 56, 57, 1) 96%
+    )
+    no-repeat, rebeccapurple;
+    border-radius: 10px;
+}
+
+.txtbg {
+    background: linear-gradient(
+    105deg,
+    rgba(87, 210, 221, 0.2) 39%,
+    rgb(92, 156, 169) 96%
+    )
+    no-repeat, rgb(79, 204, 200);
+    width:max-content;
+}
+
+.w {
+    color:azure;
 }
