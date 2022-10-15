@@ -14,7 +14,7 @@
 <body>
     <header>
         <h1>Meeting #1: 10/05/2022</h1>
-        <div><h2>Outline</h2></div>
+        <div><h3>Outline</h3></div>
         <nav>
             <ul>
                 <li><a href="#checklist">Checklist</a></li>
@@ -25,7 +25,7 @@
     </header>
     
     <main>
-        <h3><span>Team Members</span></h3>
+        <h2><span>Team Members</span></h2>
         <img
         src="people.jpg"
         alt="team members"
@@ -35,107 +35,118 @@
         <video width="320" controls src="mov.mp4"></video>
         <section>
             <h2 id="checklist"></h2>
-                <ol>
-                    <li><input type="checkbox" /> Introductions</li>
-                    <li><input type="checkbox" /> Icebreakers</li>
-                    <li><input type="checkbox" /> Reviewed lecture slides</li>
-                    <li><input type="checkbox" /> Brainstorming session</li>
-                    <li><input type="checkbox" /> Wrote out documentation</li>
-                    <li><input type="checkbox" /> Planned next meeting</li>
-                </ol>
-
-            </section>
-            <section>
-                <h2 id="details">Meeting Details</h2>
-                <p>
-                    Made introductions within group. Went over course logistics with TA. Discussed usage of social media platform
-                    and time to meet. 
-                    <br>
-                    Planned for next meeting and future GitHub repo. 
-                </p>
+            <ol>
+                <li><input type="checkbox" /> Introductions</li>
+                <li><input type="checkbox" /> Icebreakers</li>
+                <li><input type="checkbox" /> Reviewed lecture slides</li>
+                <li><input type="checkbox" /> Brainstorming session</li>
+                <li><input type="checkbox" /> Wrote out documentation</li>
+                <li><input type="checkbox" /> Planned next meeting</li>
+            </ol>
+            
+        </section>
+        <section>
+            <h3 id="details">Meeting Details</h3>
+            <div class = "wrapper"><p>
                 <ul>
+                    <div class="box px">
+                        <li>Made introductions within group. Went over course logistics with TA. </li>
+                        <li>Discussed usage of social media platform
+                            and time to meet. </li>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="box vw">
+                            <li>Planned for next meeting and future GitHub repo. </li>
+                        </div>
+                    </ul>
+                </p>
+                <hr>
+                <ul class = "ems">
                     <li>8:00 pm: <strong>meeting started</strong></li>
                     <li>8:05 pm: went over names/introductions with group</li>
                     <li>8:20 pm: went through <i>course logistics</i> and <em>format</em> with TA</li>
                     <li>8:40 pm: discussed what <a href ="https://slack.com/">platform</a> to use for communication</li>
                     <li>8:50 pm: <b>meeting adjourned</b></li>
                 </ul>
-                
-            </section>
-            <hr>
-            <section>
-                <details>
-                    <summary>Contact Info</summary>
-                    joyin@ucsd.edu
-                </details>
-            </section>
-        </main>
-        
-        <footer>
-            <textarea id="comments" name="comments"
-            rows="5" cols="18">Additional Comments/Concerns
-        </textarea>
-        <br>
-        
+            </div>
+            
+        </section>
+        <hr>
         <section>
-            <h6 id="sendmessage">Send Us a Message</h6>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required
-                minlength="4" maxlength="8" size="10" placeholder="Name">
+            <details>
+                <summary class = "em">Contact Info</summary>
+                joyin@ucsd.edu
+            </details>
+        </section>
+    </main>
+    
+    <footer>
+        <textarea id="comments" name="comments"
+        rows="5" cols="18">Additional Comments/Concerns
+    </textarea>
+    <br>
+    
+    <section>
+        <h5 id="sendmessage">Send Us a Message</h5>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required
+        minlength="4" maxlength="8" size="10" placeholder="Name">
+        
+        <form onsubmit="alert('Message has been Sent!')">
+            <input type="text" placeholder="Enter Message" />
+            <button>Submit</button>
+        </form>
+    </section>
+    <br>
+    <section>
+        <label for="meeting-date">Choose date for next meeting:</label>
+        
+        <input type="date" id="meeting-date" name="meeting-date"
+        value="2022-10-13"
+        min="2022-10-06" max="2022-12-31">
+        <form>
+            <fieldset>
+                <legend>Choose your favorite class</legend>
                 
-                <form onsubmit="alert('Message has been Sent!')">
-                    <input type="text" placeholder="Enter Message" />
-                    <button>Submit</button>
-                </form>
-            </section>
-            <br>
-            <section>
-                <label for="meeting-date">Choose date for next meeting:</label>
+                <input type="radio" id="cse110" name="class">
+                <label for="cse110">CSE 110</label><br>
                 
-                <input type="date" id="meeting-date" name="meeting-date"
-                value="2022-10-13"
-                min="2022-10-06" max="2022-12-31">
-                <form>
-                    <fieldset>
-                        <legend>Choose your favorite class</legend>
-                        
-                        <input type="radio" id="cse110" name="class">
-                        <label for="cse110">CSE 110</label><br>
-                        
-                        <input type="radio" id="cse140" name="class">
-                        <label for="cse140">CSE 140</label><br>
-                        
-                        <input type="radio" id="cse101" name="class"/>
-                        <label for="cse101">CSE 101</label>
-                    </fieldset>
-                </form>
-            </section>
-            <br>
-            <section>
-                <label for="pet-select">Choose social media platform:</label>
+                <input type="radio" id="cse140" name="class">
+                <label for="cse140">CSE 140</label><br>
                 
-                <select id="pet-select">
-                    <option value="">--Please choose an option--</option>
-                    <option value="slack">Slack</option>
-                    <option value="discord">Discord</option>
-                    <option value="messenger">Facebook Messenger</option>
-                    <option value="instagram">Instagram</option>
-                    <option value="text">Text Messaging</option>
-                </select>
-            </section>
-            <section>
-                <label for="grade-choice">Choose a grade:</label>
-                <input list="grade-choices" id="grade-choice" name="grade-choice">
-                <datalist id="grade-choices">
-                    <option value="A">
-                        <option value="B">
-                            <option value="C">
-                                <option value="F">
-                                </datalist>
-                                <button>Submit</button>
-                            </section>
-                        </footer>
-                    </body>
-                    
-                    </html>
-                    
+                <input type="radio" id="cse101" name="class"/>
+                <label for="cse101">CSE 101</label>
+            </fieldset>
+        </form>
+    </section>
+    <br>
+    <section>
+        <label for="pet-select">Choose social media platform:</label>
+        
+        <select id="pet-select">
+            <option value="">--Please choose an option--</option>
+            <option value="slack">Slack</option>
+            <option value="discord">Discord</option>
+            <option value="messenger">Facebook Messenger</option>
+            <option value="instagram">Instagram</option>
+            <option value="text">Text Messaging</option>
+        </select>
+    </section>
+    <section>
+        <label for="grade-choice">Choose a grade:</label>
+        <input list="grade-choices" id="grade-choice" name="grade-choice">
+        <datalist id="grade-choices">
+            <option value="A">
+                <option value="B">
+                    <option value="C">
+                        <option value="F">
+                        </datalist>
+                        <button>Submit</button>
+                    </section>
+                </footer>
+            </body>
+            
+            </html>
+            
