@@ -47,6 +47,27 @@ h5 {
     font-size: 2ex;
 }
 
+.box {
+    margin:auto;
+    border: 1px solid black;
+}
+
+.container {
+    padding-top: 20x;
+    margin-bottom: 1%;
+    border-style: dotted;
+    border-color:blue;
+    border-top-width: 1px;
+    border-radius: 10px;
+}
+
+span {
+    background-color: lightcoral;
+    margin: 40px;
+    color:azure;
+    padding: 5px;
+}
+
 .bg {
     background: linear-gradient(
     105deg,
