@@ -11,7 +11,7 @@ h2 {
 }
 
 h3 {
-    color:crimson;
+    color:blueviolet;
 }
 
 h4 {
@@ -63,9 +63,13 @@ h5 {
 
 span {
     background-color: lightcoral;
+    position: static;
     margin: 40px;
     color:azure;
     padding: 5px;
+    display: inline flow;
+    max-height: 20px;
+    max-width: 60px;
 }
 
 .bg {
@@ -90,4 +94,38 @@ span {
 
 .w {
     color:azure;
+}
+
+.dis {
+    display: none; 
+}
+
+.grade {
+    position: relative; 
+    background:blue; 
+    color: white;
+}
+
+.a {
+    grid-column-start: 1;
+    grid-column-end: span col4-start;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+
+.b {
+    display: flex;
+    align-self: flex-start;
+    flex-grow: 4;
+}
+
+/* Exact width */
+@media (width: 360px) {
+}
+
+/* Minimum width */
+@media (min-width: 35rem) {
+    div {
+        background:rgba(158, 202, 210, 0.77)
+    }
 }
