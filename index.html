@@ -51,7 +51,7 @@
             <section class="txtbg"><h4 id="details">Meeting Details</h4></section>
             <div class = "box wrapper"><p>
                 <ul>
-                    <div class="px">
+                    <div class="px" id="intro">
                         <li>Made introductions within group. Went over course logistics with TA. </li>
                         <li>Discussed usage of social media platform
                             and time to meet. </li>
@@ -59,12 +59,14 @@
                         <br>
                         <br>
                         <br>
-                        <div class="vw">
+                        <div class="vw" id="plan">
                             <li>Planned for next meeting and future GitHub repo. </li>
                         </div>
                     </ul>
                 </p>
                 <hr>
+                <h6>Time Stamps</h6>
+                <p>Detailed overview of meeting events. </p>
                 <ul class = "ems">
                     <li>8:00 pm: <strong>meeting started</strong></li>
                     <li>8:05 pm: went over names/introductions with group</li>
@@ -77,99 +79,105 @@
             <span>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Ut consequat nisi sit amet elit mattis, in pharetra lacus maximus. 
-                Sed fermentum pretium odio id faucibus. Vivamus aliquam turpis leo, 
-                eget posuere ante aliquet sit amet. Vivamus eu tortor ac est pulvinar tristique 
-                vel vehicula dolor. Curabitur ac pharetra leo.
             </span>
             <br>
             <br>
-            <div class="dis">
-                Arcu risus quis varius quam quisque id. Orci ac auctor augue mauris augue neque gravida in. 
-                Turpis in eu mi bibendum. Pulvinar elementum integer enim neque. 
-                Viverra orci sagittis eu volutpat. In massa tempor nec feugiat. 
-                Magnis dis parturient montes nascetur ridiculus mus mauris. 
-                Vel pretium lectus quam id leo. Pulvinar sapien et ligula ullamcorper malesuada proin libero. 
+            <div class="s">
+                Sed fermentum pretium odio id faucibus. Vivamus aliquam turpis leo, 
+                eget posuere ante aliquet sit amet. Vivamus eu tortor ac est pulvinar tristique 
+                vel vehicula dolor. Curabitur ac pharetra leo.
             </div>
+            <br>
+            <br>
+            <div class="dis">
+                Arcu risus quis varius quam quisque id. 
+            </div>
+            <p>Orci ac auctor augue mauris augue neque gravida in. </p>
             
         </section>
         <hr>
         <section>
-            <details>
-                <summary class = "em">Contact Info</summary>
-                joyin@ucsd.edu
-            </details>
+            <p>Magnis dis parturient montes nascetur ridiculus mus mauris. 
+                Vel pretium lectus quam id leo. Pulvinar sapien et ligula ullamcorper malesuada proin libero. </p>
+                <details>
+                    <summary class = "em">Contact Info</summary>
+                    joyin@ucsd.edu
+                </details>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="container"><textarea id="comments" name="comments"
+                rows="5" cols="18">
+            </textarea>
+        </div>
+        
+        <section>
+            <h5 id="sendmessage">Send Us a Message</h5>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required
+            minlength="4" maxlength="8" size="10" placeholder="Name">
+            
+            <form onsubmit="alert('Message has been Sent!')">
+                <input type="text" placeholder="Enter Message" />
+                <button class="msg">Submit</button>
+            </form>
+            <p>
+                Turpis in eu mi bibendum. Pulvinar elementum integer enim neque. 
+                Viverra orci sagittis eu volutpat. In massa tempor nec feugiat. 
+            </p>
         </section>
-    </main>
-    
-    <footer>
-        <div class="container"><textarea id="comments" name="comments"
-            rows="5" cols="18">
-        </textarea>
-    </div>
-    <br>
-    
-    <section>
-        <h5 id="sendmessage">Send Us a Message</h5>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required
-        minlength="4" maxlength="8" size="10" placeholder="Name">
-        
-        <form onsubmit="alert('Message has been Sent!')">
-            <input type="text" placeholder="Enter Message" />
-            <button class="msg">Submit</button>
-        </form>
-    </section>
-    <br>
-    <section class="a">
-        <label for="meeting-date">Choose date for next meeting:</label>
-        
-        <input type="date" id="meeting-date" name="meeting-date"
-        value="2022-10-13"
-        min="2022-10-06" max="2022-12-31">
-        <form>
-            <fieldset>
-                <legend>Choose your favorite class</legend>
-                
-                <input type="radio" id="cse110" name="class">
-                <label for="cse110">CSE 110</label><br>
-                
-                <input type="radio" id="cse140" name="class">
-                <label for="cse140">CSE 140</label><br>
-                
-                <input type="radio" id="cse101" name="class"/>
-                <label for="cse101">CSE 101</label>
-            </fieldset>
-        </form>
-    </section>
-    <br>
-    <section class="grade">
-        <label for="pet-select">Choose social media platform:</label>
-        
-        <select id="pet-select">
-            <option value="">--Please choose an option--</option>
-            <option value="slack">Slack</option>
-            <option value="discord">Discord</option>
-            <option value="messenger">Facebook Messenger</option>
-            <option value="instagram">Instagram</option>
-            <option value="text">Text Messaging</option>
-        </select>
-    </section>
-    <section class="b">
-        <label for="grade-choice">Choose a grade:</label>
-        <input list="grade-choices" id="grade-choice" name="grade-choice">
-        <datalist id="grade-choices">
-            <option value="A">
-                <option value="B">
-                    <option value="C">
-                        <option value="F">
-                        </datalist>
-                        <button>Submit</button>
-                    </section>
+        <br>
+        <section class="a">
+            <label for="meeting-date">Choose date for next meeting:</label>
+            
+            <input type="date" id="meeting-date" name="meeting-date"
+            value="2022-10-13"
+            min="2022-10-06" max="2022-12-31">
+            <form>
+                <fieldset>
+                    <legend>Choose your favorite class</legend>
                     
-                    <p>Would you like to subscribe to our channel?</p>
-                    <button class="joinBtn">Subscribe</button>
-                </footer>
-            </body>
+                    <input type="radio" id="cse110" name="class">
+                    <label for="cse110">CSE 110</label><br>
+                    
+                    <input type="radio" id="cse140" name="class">
+                    <label for="cse140">CSE 140</label><br>
+                    
+                    <input type="radio" id="cse101" name="class"/>
+                    <label for="cse101">CSE 101</label>
+                </fieldset>
+            </form>
+        </section>
+        <br>
+        <section class="grade">
+            <label for="pet-select">Choose social media platform:</label>
             
-            </html>
-            
+            <select id="pet-select">
+                <option value="">--Please choose an option--</option>
+                <option value="slack">Slack</option>
+                <option value="discord">Discord</option>
+                <option value="messenger">Facebook Messenger</option>
+                <option value="instagram">Instagram</option>
+                <option value="text">Text Messaging</option>
+            </select>
+        </section>
+        <section class="b">
+            <label for="grade-choice">Choose a grade:</label>
+            <input list="grade-choices" id="grade-choice" name="grade-choice">
+            <datalist id="grade-choices">
+                <option value="A">
+                    <option value="B">
+                        <option value="C">
+                            <option value="F">
+                            </datalist>
+                            <button>Submit</button>
+                        </section>
+                        
+                        <p class="sub">Would you like to subscribe to our channel?</p>
+                        <button class="joinBtn">Subscribe</button>
+                    </footer>
+                </body>
+                
+                </html>
+                
