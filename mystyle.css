@@ -1,57 +1,69 @@
 body {
-    background-color: aliceblue;
+    background-color: aliceblue; 
+    /* change background color */
 }
 
 h1 {
-    color:rgba(255, 120, 255, 0.771);
+    color:rgba(255, 120, 255, 0.771); 
+    /* set text color */
 }
 
 h2 {
     text-align: center;
+    /* align text to center */
 }
 
 h3 {
     color:blueviolet;
+    /* set text color */
 }
 
 h4 {
     color:#d4ffea;
+    /* set text color*/
 }
 
 h5,
 h6 {
     color:hsl(243, 80%, 53%);
     font-size: 20px;
+    /* set color and font for both */
 }
 
 .ems li {
     font-size: 16px;
+    /* set font size*/
 }
 
 .wrapper {
     font-size: 1em;
+    /* set font size*/
 }
 
 .px {
     width: 200px;
     height: 0.75in;
+    /* set dimensions*/
 }
 
 .vw {
     width: 20vw;
     height: 5pt;
     font-size: 1rem;
+    /* set dimensions and font size */
 }
 
 .em {
     width: 10em;
     height: 2vh;
     font-size: 2ex;
+    /* set dimensions and font size */
 }
 
 .box {
     margin:auto;
     border: 1px solid black;
+    /* set margins and border */
 }
 
 .container {
@@ -61,6 +73,7 @@ h6 {
     border-color:blue;
     border-top-width: 1px;
     border-radius: 10px;
+    /* set margins and borders */
 }
 
 span {
@@ -74,6 +87,7 @@ span {
     max-width: 60px;
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: underline;
+    /* configure box model and colors */
 }
 
 .bg {
@@ -84,6 +98,7 @@ span {
     )
     no-repeat, rebeccapurple;
     border-radius: 10px;
+    /* set background gradient and border */
 }
 
 .txtbg {
@@ -94,20 +109,24 @@ span {
     )
     no-repeat, rgb(79, 204, 200);
     width:max-content;
+    /* set background gradient and width */
 }
 
 .w {
     color:azure;
+    /* set color */
 }
 
 .dis {
     display: none; 
+    /* hide display */
 }
 
 .grade {
     position: relative; 
     background:blue; 
     color: white;
+    /* set colors and position */
 }
 
 .a {
@@ -115,12 +134,14 @@ span {
     grid-column-end: span col4-start;
     grid-row-start: 2;
     grid-row-end: span 2;
+    /* set grid lines */
 }
 
 .b {
     display: flex;
     align-self: flex-start;
     flex-grow: 4;
+    /* enable flex display, set flex attributes */
 }
 
 /* Exact width */
@@ -136,6 +157,7 @@ span {
 
 .msg:hover {
     color: blue;
+    /* set color upon hover */
 }
 
 .joinBtn {
@@ -147,41 +169,51 @@ span {
     font-weight: bold;
     color: white;
     cursor: pointer;
+    /* set dimensions and colors for button */
 }
 
 .joinBtn:active {
     box-shadow: 2px 2px 5px #fc894d;
+    /* set shadow upon button active */
 }
 
 #intro {
     color:#d4ffea; 
+    /* set color */
 }
 
 p[class~="sub"] {
     font-style: italic;
+    /* set font italics */
 }
 
 section > p {
     color:whitesmoke; 
     background-color: #f34079;
+    /* set colors */
 }
 
 section p {
     text-decoration: underline;
+    /* set text underline */
 }
 
 h6 + p {
     font-style: italic;
+    /* set font italics */
 }
 
 div ~ p {
     background-color: orchid;
+    /* set background color */
 }
 
 div.s {
     color:black;
+    /* set color */
 }
 
 * {
     color:rgb(64, 31, 233)
+    /* set text color for all */
 }
