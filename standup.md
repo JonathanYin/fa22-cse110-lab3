@@ -4,7 +4,10 @@
 
 ## Goals
 
-## Daily
+* Follow up on team meeting
+* Update class notes
+
+### Daily
 
 * daily reminders
 * check calendar
